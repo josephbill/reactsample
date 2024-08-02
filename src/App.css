@@ -1,5 +1,19 @@
-.App {
+html,body, #root, .App {
+  height: 100%;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+}
+
+.column{
+  flex: 1;
+  padding: 10px;
 }
 
 .App-logo {
