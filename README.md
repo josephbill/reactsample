@@ -27,51 +27,35 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-'
-
-
 '''' 
 
-
 Single page applications (SPA's) : 1 HTML DOCUMENT 
+
+Component : reusable user interface
+state : create and managing data inside a component JSX
+props : communication between components : sharing of data 
+
+
+HOOKS in react 
+These are features/functions introduced in react 16.8 that allows devs to use state and other react features without writing a class.
+
+1. State hook :create and managing data inside a component JSX
+
+const [referenceVariable, functiontosetthe_value_for_the_reference_variable] = useState(false)
+
+2. UseEffect hook : allows us as react devs to perform side effects in functional components
+     - Data Fetching : Communication with the server 
+     - Subscriptions : GraphQL 
+     - Manually changing the DOM  etc.
+
+3. Context API : useContext() 
+    - To handle prop drilling. 
+    - Allows devs to access the context/ shared info in functional components 
+
+
+    APP -> ComponentA , ComponentB, CompentC  ->  ComponentA will load these -> ComponentD, ComponentE, ComponentF  
+
+4. Custom Hooks : are functions that let you extract hook logic into reusable pieces. : useSth.
+
+useReducer , useMemo, useCallback , useLayoutEffect
+
